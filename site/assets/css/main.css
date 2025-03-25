@@ -306,16 +306,11 @@ a:hover {
 	-ms-transform: translate3d(0, 0, 0);
 	transform: translate3d(0, 0, 0);
 	background-position: center center;
-	background-image: linear-gradient(to right,
-			rgba(190, 81, 192, 0.3) 10%,
-			rgba(0, 0, 0, 0.5) 10%,
-			rgba(0, 0, 0, 0.5) 10%,
-			rgba(190, 81, 192, 0.3) 10%),
-		url('images/bg.jpg');
+	background-image: url('images/bg.jpg');
 	background-size: cover;
 	height: 100%;
 	width: 100%;
-	animation: slide 10s infinite alternate linear;
+	animation: slide 20s infinite alternate linear;
 }
 
 @keyframes slide {
@@ -324,7 +319,7 @@ a:hover {
 	}
 
 	to {
-		background-position: -150px 0;
+		background-position: -300px 0;
 	}
 }
 
