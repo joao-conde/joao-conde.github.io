@@ -305,13 +305,27 @@ a:hover {
 	-webkit-transform: translate3d(0, 0, 0);
 	-ms-transform: translate3d(0, 0, 0);
 	transform: translate3d(0, 0, 0);
-	background: #0F0F0F url("images/bg.jpg") bottom left;
-	background-repeat: repeat-x;
+	background-position: center center;
+	background-image: linear-gradient(to right,
+			rgba(190, 81, 192, 0.3) 10%,
+			rgba(0, 0, 0, 0.5) 10%,
+			rgba(0, 0, 0, 0.5) 10%,
+			rgba(190, 81, 192, 0.3) 10%),
+		url('images/bg.jpg');
+	background-size: cover;
 	height: 100%;
-	left: 0;
-	opacity: 1;
-	position: fixed;
-	top: 0;
+	width: 100%;
+	animation: slide 10s infinite alternate linear;
+}
+
+@keyframes slide {
+	from {
+		background-position: 0 0;
+	}
+
+	to {
+		background-position: -150px 0;
+	}
 }
 
 @-moz-keyframes bg {
