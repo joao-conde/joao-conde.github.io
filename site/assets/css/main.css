@@ -1,6 +1,12 @@
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,900");
 @import url("fontawesome-all.min.css");
 
+*,
+*:before,
+*:after {
+	box-sizing: inherit;
+}
+
 html,
 body,
 div,
@@ -20,42 +26,30 @@ nav {
 	vertical-align: baseline;
 }
 
-header,
-nav {
-	display: block;
-}
-
-body {
-	line-height: 1;
-	-webkit-text-size-adjust: none;
-}
-
-ul {
-	list-style: none;
-}
-
 html {
 	box-sizing: border-box;
 }
 
-*,
-*:before,
-*:after {
-	box-sizing: inherit;
-}
-
 body {
-	background: #fff;
+	-webkit-text-size-adjust: none;
 	overflow: hidden;
-}
-
-body {
+	line-height: 1;
 	color: #fff;
+	background: #fff;
 	font-family: "Source Sans Pro", sans-serif;
 	font-size: 15pt;
 	font-weight: 300 !important;
 	letter-spacing: -0.025em;
 	line-height: 1.75em;
+}
+
+header,
+nav {
+	display: block;
+}
+
+ul {
+	list-style: none;
 }
 
 a {
